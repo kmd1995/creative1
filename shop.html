@@ -1,1 +1,478 @@
+<!DOCTYPE html>
+<html>
+<title>Create2Control</title>
+<link rel="icon" href="3dlogo.jpg" type="image/png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=entypo">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+.textcolor{
+	color:gold;
+	font-weight:bold;
+}
+.pp{
+background-color:#e8f3f8;
+border-radius:10px;
+
+}
+.ptext{
+color:#12e3db;
+}
+
+.dd{
+position:absolute;
+top:90px;
+}
+html { 
+  background: url(abstract.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+}
+.sidebar-menu{
+opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#jeanz{
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:30px;
+}
+#jeanzz{
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:30px;
+}
+.pricewords1{
+color:white;
+text-decoration:none;
+position:absolute;
+top:1670px;
+
+
+}
+.pricewords{
+color:white;
+text-decoration:none;
+
+
+}
+
+a:hover{
+background-color:lightgrey;
+text-decoration:none;
+padding:5px;
+}
+*{
+text-decoration:none;
+}
+.pinkimg{
+position: absolute;
+top:20px;
+
+}
+.abc{
+position:absolute;
+top:20px;
+}
+.shopbutton1{
+position:absolute;
+top:70px;
+left:5px;
+
+}
+.shopbutton{
+opacity:0.6;
+
+}
+.bshadow{
+border-radius:10px;
+box-shadow:5px 5px 5px 5px black;
+}
+.bshadow1{
+border-radius:10px;
+box-shadow:2.5px 2.5px 2.5px 2.5px black;
+}
+
+
+/* entypo */
+[class*="entypo-"]:before {
+   font-family: "entypo", sans-serif;
+}
+a { 
+   text-decoration: none;
+   
+}
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   z-index:-1;
+}
+.container {
+   margin: 0 auto;
+   padding: 20px 50px;
+   background: white;
+}
+#sticky-social {
+   right: 0;
+   position: fixed;
+   top: 150px;
+}
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+#sticky-social a span {
+   line-height: 35px;
+   left: 120px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+#sticky-social a:hover span {
+   right: 100%;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
+
+#sticky-social a[class*="gplus"],
+#sticky-social a[class*="gplus"]:hover,
+#sticky-social a[class*="gplus"] span { background: #dd4b39; }  
+
+#sticky-social a[class*="linkedin"],
+#sticky-social a[class*="linkedin"]:hover,
+#sticky-social a[class*="linkedin"] span { background: #007bb6; }  
+
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover,
+#sticky-social a[class*="instagrem"] span { background: #517fa4; }  
+
+#sticky-social a[class*="stumbleupon"],
+#sticky-social a[class*="stumbleupon"]:hover,
+#sticky-social a[class*="stumbleupon"] span { background: #eb4924; }  
+
+#sticky-social a[class*="pinterest"],
+#sticky-social a[class*="pinterest"]:hover,
+#sticky-social a[class*="pinterest"] span { background: #cc2127; }  
+
+#sticky-social a[class*="flickr"],
+#sticky-social a[class*="flickr"]:hover,
+#sticky-social a[class*="flickr"] span { background: #ff0084; }  
+
+#sticky-social a[class*="tumblr"],
+#sticky-social a[class*="tumblr"]:hover,
+#sticky-social a[class*="tumblr"] span { background: #32506d; }
+
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block sidebar-menu w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src="3dlogo.jpg" style="width:200px" />
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="shirts.html" class="w3-bar-item w3-button">Creative Shirts</a>
+    <a href="hats.html" class="w3-bar-item w3-button">Creative Hats</a>
+    <a href="#" class="w3-bar-item w3-button">Creative Jeans</a>
+    
+    
+    <a href="#" class="w3-bar-item w3-button">Creative Gymware</a>
+    <a href="#" class="w3-bar-item w3-button">Creative Accessories</a>
+    
+    
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">About</a>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">C2C</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+  <img src="banner1.png">
+    <p class="w3-right">
+		
+    </p>
+  </header>
+
+  <!-- Image header -->
+  
+
+<div class="w3-content w3-section aa bshadow" style="max-width:700px;">
+  <img class="mySlides" src="model1.jpg" style="width:100%">
+  <img class="mySlides" src="modellogo.jpg" style="width:100%">
+  
+  
+</div>
+<div class="w3-text-white dd" style="padding:24px 48px">
+      <h1 class="textcolor w3-jumbo  w3-hide-small">New arrivals</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 class="textcolor  w3-hide-small">COLLECTION 2017</h1>
+      <p><a href="#jeans" class="bshadow w3-button w3-purple w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+  <div class="w3-container" id="jeans">
+    <img src="cc1.png" id="jeanz">
+  </div>
+  
+  <aside id="sticky-social">
+    <ul>
+        <li><a href="#" class="entypo-facebook" target="_blank"><span>Facebook</span></a></li>
+        <li><a href="#" class="entypo-twitter" target="_blank"><span>Twitter</span></a></li>
+        <li><a href="#" class="entypo-gplus" target="_blank"><span>Google+</span></a></li>
+        <li><a href="#" class="entypo-linkedin" target="_blank"><span>LinkedIn</span></a></li>
+        <li><a href="#" class="entypo-instagrem" target="_blank"><span>Instagram</span></a></li>
+        <li><a href="#" class="entypo-stumbleupon" target="_blank"><span>StumbleUpon</span></a></li>
+        <li><a href="#" class="entypo-pinterest" target="_blank"><span>Pinterest</span></a></li>
+        <li><a href="#" class="entypo-flickr" target="_blank"><span>Flickr</span></a></li>
+        <li><a href="#" class="entypo-tumblr" target="_blank"><span>Tumblr</span></a></li>
+    </ul>
+</aside>
+
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+	  <div class="w3-display-container">
+        <img class="bshadow" src="goldshirt5.jpg" style="width:100%">
+		<span class="w3-tag w3-display-topleft">New</span>
+		<div class="w3-display-middle w3-display-hover">
+             <a href="shirts.html" class="shopbutton">Buy now <i class="fa fa-shopping-cart"></i></a>
+          </div>
+		  </div>
+		  <p class="pricewords">Hunter green tee, Gold control<br><b>$15.00</b></p>
+      </div>
+      <div class="w3-container">
+	  <div class="w3-display-container">
+        <img class="bshadow" src="hat.jpg" style="height:270px; width:100%">
+		<span class="w3-tag w3-display-topleft">New</span>
+		<div class="w3-display-middle w3-display-hover">
+            <a href="hats.html" class="shopbutton">Buy now <i class="fa fa-shopping-cart"></i></a>
+          </div>
+		  </div>
+        <p class="pricewords">Black cap, Gold control<br><b>$15.00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img class="bshadow" src="goldshirt6.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+             <a href="shirts.html" class="shopbutton">Buy now <i class="fa fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="pricewords">Navy Blue tee, Lime green control<br><b>$19.99</b></p>
+      </div>
+      <div class="w3-container">
+	  <div class="w3-display-container">
+        <img class="bshadow" src="hat2.jpg" style="width:100%">
+		<span class="w3-tag w3-display-topleft">New</span>
+		 <div class="w3-display-middle w3-display-hover">
+             <a href="hats.html" class="shopbutton">Buy now <i class="fa fa-shopping-cart"></i></a>
+          </div>
+		 </div>
+        <p class="pricewords">Navy Blue cap, Lime green control<br><b>$15.00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+	  <div class="w3-display-container">
+        <img class="bshadow" src="goldshirt7.jpg" style="height:210px; width:100%">
+		<span class="w3-tag w3-display-topleft">New</span>
+		<div class="w3-display-middle w3-display-hover">
+             <a href="shirts.html" class="shopbutton">Buy now <i class="fa fa-shopping-cart"></i></a>
+          </div>
+		 </div>
+        <p class="pricewords">Heather Grey tee, Silver control<br><b>$19.99</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img class="bshadow" src="hat41.jpg" style="height:270px; width:100%">
+		  <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+             <a href="hats.html" class="shopbutton">Buy now <i class="fa fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="pricewords">Black cap, Silver control<br><b class="w3-text-yellow">$15.00</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+	  <div class="w3-display-container">
+        <img class="bshadow" src="goldshirt9.jpg" style="width:100%">
+		<span class="w3-tag w3-display-topleft">New</span>
+		<div class="w3-display-middle w3-display-hover">
+             <a href="shirts.html" class="shopbutton">Buy now <i class="fa fa-shopping-cart"></i></a>
+          </div>
+		 </div>
+        <p class="pricewords">Hot Pink tee, Black control <br><b>$19.99</b></p>
+      </div>
+      <div class="w3-container">
+	  <div class="w3-display-container">
+        <img src="hat3.jpg" class="pinkimg bshadow" style="width:100%">
+		<span class="w3-tag abc">New</span>
+		<div class="w3-display-middle w3-display-hover">
+             <a class="shopbutton1" href="hats.html">Buy now <i class="fa fa-shopping-cart"></i></a>
+          </div>
+		 </div>
+        <p class="pricewords1">Pink cap, Black control<br><b>$15.00</b></p>
+      </div>
+    </div>
+  </div> 
+
+  <!-- Subscribe section -->
+  <div class="w3-container" id="jeanss">
+    <img src="sub.png" id="jeanzz">
+  </div>
+  
+  <div class="  w3-container pp w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class=" bshadow1 w3-button w3-purple w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4 ptext">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-purple">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4 ptext">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify ptext">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> CreativeControl</p>
+        <p><i class="fa fa-fw fa-phone"></i> (470) 255-7666</p>
+        <p><i class="fa fa-fw fa-envelope"></i> CCclothing@yahoo.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-credit-card"></i> PayPal</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Secure Credit Card</p>
+        <br>
+        
+      </div>
+    </div>
+  </footer>
+
+  <div class="pp sidebar-menu w3-center w3-padding-24">Copyright &copy; 2017 Create2Control.com - All Rights Reserved.<br>Powered by <a target="_blank" class="w3-hover-opacity">Tech Enterprises</a></div>
+  
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
