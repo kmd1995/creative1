@@ -1,1 +1,196 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome to the lab</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+html { 
+  background: url(abstract.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+</style>
+<body>
+
+
+
+<div class="w3-display-container w3-container">
+<img class="mySlides" src="modellogo11.jpg" style="width:100%">
+  <img class="mySlides" src="model6.jpg" style="width:100%">
+  <img class="mySlides" src="model4.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="textcolor w3-jumbo  w3-hide-small">New arrivals</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 class="textcolor  w3-hide-small">COLLECTION 2017</h1>
+      <p><a href="shop.html" class="w3-button w3-purple w3-padding-large w3-large">GET CREATIVE</a></p>
+    </div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<!--<style>
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+#home{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:25px;
+	background:ed1c24;
+	width:15%;
+	
+}
+
+.navp{
+background:#e8f3f8;
+
+
+}
+.position2{
+display:block;
+position:absolute;
+right:100px;
+top:550px;
+}
+.position1{
+display:block;
+position:absolute;
+left:100px;
+top:550px;
+}
+html { 
+  background: url(modellogo1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.mySlides:hover{
+   background-color:grey;
+ }
+
+
+
+</style>
+<body>
+
+<div class="w3-display-container w3-container">
+    <img class="mySlides"src="modellogo1.jpg" alt="Jeans" style="width:100%">
+	<img class="mySlides" src="model6.jpg" style="width:100%;">
+	<img class="mySlides" src="model4.jpg" style="width:100%;">
+	<img class="mySlides" src="model7.jpg" style="width:100%;">
+   <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="textcolor w3-jumbo  w3-hide-small">New arrivals</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 class="textcolor  w3-hide-small">COLLECTION 2017</h1>
+      <p><a href="shop.html" class="w3-button w3-purple w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+
+
+
+<!--<div class="home">
+			<a id="home"  href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home w3-margin-right"></i>Home</a>
+		</div>
+
+<div class="w3-content w3-display-container display-border" style="margin-bottom:50px;">
+  <img class="mySlides" src="model1.jpg" style="margin:auto;">
+  <img class="mySlides" src="model2.jpg" style="margin:auto;">
+  <img class="mySlides" src="model3.jpg" style="margin:auto;">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+  </div>-->
+
+  <!--<button class="w3-button w3-black position1" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black position2" onclick="plusDivs(1)">&#10095;</button>
+  
+  
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>-->
+
+
+
+<footer class="w3-container w3-padding-32 navp w3-center">
+  <h4>Follow Us</h4>
+  <a href="https://www.facebook.com/eZeeCopy/" class="w3-button w3-large w3-purple" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com/ezeecopy" class="w3-button w3-large w3-purple" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.instagram.com/ezeecopy/" class="w3-button w3-large w3-purple" href="javascript:void(0)" title="Instagram"><i class="fa fa-instagram"></i></a>
+  
+  <p>Copyright &copy; 2017 Create2Control.com - All Rights Reserved.</p>
+  <p>Powered by <a target="_blank">Tech Enterprises.</a></p>
+  
+ 
+  
+  
+  
+ 
+</footer>
+
+
+</body>
+</html>
 
