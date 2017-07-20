@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<title>Create2Control</title>
+<link rel="icon" href="3dlogo.jpg" type="image/png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=entypo">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+.textcolor{
+	color:gold;
+	font-weight:bold;
+}
+.pp{
+background-color:#e8f3f8;
+
+}
+
+.dd{
+position:absolute;
+top:90px;
+}
+html { 
+  background: url(abstract.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.sidebar-menu{
+opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.jeanz{
+margin-right:20px;
+margin-bottom:1300px;
+border-radius:20px;
+box-shadow:2.5px 2.5px 2.5px 2.5px black;
+width:95%;
+}
+
+.paypal1{
+position:absolute;
+right:600px;
+top:428px;
+width:240px;
+border-radius:10px;
+box-shadow:5px 5px 5px 5px black;
+}
+.paypal2{
+position:absolute;
+right:560px;
+top:430px;
+width:400px;
+border-radius:10px;
+box-shadow:5px 5px 5px 5px black;
+z-index:200;
+}
+.paypal3{
+position:absolute;
+right:100px;
+top:820px;
+width:400px;
+border-radius:10px;
+box-shadow:5px 5px 5px 5px black;
+}
+.paypal4{
+position:absolute;
+right:120px;
+top:290px;
+width:400px;
+border-radius:10px;
+box-shadow:5px 5px 5px 5px black;
+z-index:100;
+
+}
+.paypal5{
+position:absolute;
+right:530px;
+top:920px;
+width:400px;
+border-radius:10px;
+box-shadow:5px 5px 5px 5px black;
+}
+.paypal6{
+position:absolute;
+right:350px;
+top:220px;
+width:40%;
+
+}
+form{
+	
+	color:white;
+}
+.ptext{
+color:#12e3db;
+}
+.bob{
+width:;240px;
+float:left;
+
+}
+.bob3{
+margin-right:20%;
+
+}
+#images{
+    
+	width:285px;
+	
+}
+.right{
+width:;240px;
+float:right;
+}
+.paypal11{
+position:absolute;
+right:600px;
+top:788px;
+
+}
+.paypal22{
+position:absolute;
+right:630px;
+top:1280px;
+
+}
+.paypal33{
+position:absolute;
+right:194px;
+top:1170px;
+}
+.paypal44{
+position:absolute;
+right:190px;
+top:695px;
+}
+/* entypo */
+[class*="entypo-"]:before {
+   font-family: "entypo", sans-serif;
+}
+a { 
+   text-decoration: none;
+   
+}
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   z-index:-1;
+}
+.container {
+   margin: 0 auto;
+   padding: 20px 50px;
+   background: white;
+}
+#sticky-social {
+   right: 0;
+   position: fixed;
+   top: 150px;
+}
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+#sticky-social a span {
+   line-height: 35px;
+   left: 120px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+#sticky-social a:hover span {
+   right: 100%;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
+
+#sticky-social a[class*="gplus"],
+#sticky-social a[class*="gplus"]:hover,
+#sticky-social a[class*="gplus"] span { background: #dd4b39; }  
+
+#sticky-social a[class*="linkedin"],
+#sticky-social a[class*="linkedin"]:hover,
+#sticky-social a[class*="linkedin"] span { background: #007bb6; }  
+
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover,
+#sticky-social a[class*="instagrem"] span { background: #517fa4; }  
+
+#sticky-social a[class*="stumbleupon"],
+#sticky-social a[class*="stumbleupon"]:hover,
+#sticky-social a[class*="stumbleupon"] span { background: #eb4924; }  
+
+#sticky-social a[class*="pinterest"],
+#sticky-social a[class*="pinterest"]:hover,
+#sticky-social a[class*="pinterest"] span { background: #cc2127; }  
+
+#sticky-social a[class*="flickr"],
+#sticky-social a[class*="flickr"]:hover,
+#sticky-social a[class*="flickr"] span { background: #ff0084; }  
+
+#sticky-social a[class*="tumblr"],
+#sticky-social a[class*="tumblr"]:hover,
+#sticky-social a[class*="tumblr"] span { background: #32506d; }
+
+
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block sidebar-menu w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src="3dlogo.jpg" style="width:200px" />
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="shirts.html" class="w3-bar-item w3-button">Creative Shirts</a>
+    <a href="hats.html" class="w3-bar-item w3-button">Creative Hats</a>
+    <a href="#" class="w3-bar-item w3-button">Creative Jeans</a>
+    
+    
+    <a href="#" class="w3-bar-item w3-button">Creative Gymware</a>
+    <a href="#" class="w3-bar-item w3-button">Creative Accessories</a>
+    
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">About</a>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">C2C</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    
+  </header>
+
+  <!-- Image header -->
+  
+
+
+
+
+
+  <div class="w3-container">
+    <img src="longpic2.jpg" class="jeanz">
+  </div>
+  
+  <aside id="sticky-social">
+    <ul>
+        <li><a href="#" class="entypo-facebook" target="_blank"><span>Facebook</span></a></li>
+        <li><a href="#" class="entypo-twitter" target="_blank"><span>Twitter</span></a></li>
+        <li><a href="#" class="entypo-gplus" target="_blank"><span>Google+</span></a></li>
+        <li><a href="#" class="entypo-linkedin" target="_blank"><span>LinkedIn</span></a></li>
+        <li><a href="#" class="entypo-instagrem" target="_blank"><span>Instagram</span></a></li>
+        <li><a href="#" class="entypo-stumbleupon" target="_blank"><span>StumbleUpon</span></a></li>
+        <li><a href="#" class="entypo-pinterest" target="_blank"><span>Pinterest</span></a></li>
+        <li><a href="#" class="entypo-flickr" target="_blank"><span>Flickr</span></a></li>
+        <li><a href="#" class="entypo-tumblr" target="_blank"><span>Tumblr</span></a></li>
+    </ul>
+</aside>
+
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l5 s6">
+	  
+      <div class="w3-container ">
+	  <div id="images">
+		
+		
+        <img class="paypal2" src="model11.jpg">
+		<img class="paypal3" src="greenhat.jpg">
+		<img class="paypal4" src="hat4.jpg">
+		<img class="paypal5" src="pinkhat.jpg">
+		<img class="paypal6" src="wire.png">
+		
+		
+		
+		  </div>
+		  
+		
+		<div class="paypal11">
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<table>
+<tr><td><input type="hidden" name="on0" value="Sizes">BLACK CAP GOLD ACCENT</td></tr><tr><td><select name="os0">
+	<option value="Small">Small $15.00 USD</option>
+	<option value="Medium">Medium $15.00 USD</option>
+	<option value="Large">Large $15.00 USD</option>
+	<option value="X-Large">X-Large $15.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+</div>
+      
+   
+        
+		<div class="paypal22">
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<table>
+<tr><td><input type="hidden" name="on0" value="Sizes">PINK CAP,BLACK ACCENT</td></tr><tr><td><select name="os0">
+	<option value="Small">Small $15.00 USD</option>
+	<option value="Medium">Medium $15.00 USD</option>
+	<option value="Large">Large $15.00 USD</option>
+	<option value="X-Large">X-Large $15.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+</div>
+      
+      
+
+        
+		<div class="paypal33">
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<table>
+<tr><td><input type="hidden" name="on0" value="Sizes">BLUE CAP,GREEN ACCENT</td></tr><tr><td><select name="os0">
+	<option value="Small">Small $15.00 USD</option>
+	<option value="Medium">Medium $15.00 USD</option>
+	<option value="Large">Large $15.00 USD</option>
+	<option value="X-Large">X-Large $15.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+</div>
+      
+        
+		
+		 
+        
+		<div class="paypal44">
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<table>
+<tr><td><input type="hidden" name="on0" value="Sizes">BLACK CAP,SILVER ACCENT</td></tr><tr><td><select name="os0">
+	<option value="Small">Small $15.00 USD</option>
+	<option value="Medium">Medium $15.00 USD</option>
+	<option value="Large">Large $15.00 USD</option>
+	<option value="X-Large">X-Large $15.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIIIQYJKoZIhvcNAQcEoIIIEjCCCA4CAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCqN0xwIDY4x8cmIbDkCthjdRnPafBowKufzzsQPJvxBD37CGn+7mQNYH0zquxnrzGwT6nX2OT+OIQxWXBqdS1JkfN62w1AfTZDIOy/KkxpltZbgsl+tHB773BrpMY6t2gFyfGZsqPspsZlbylO6TggxOpbE/yu7guXKCb/EP4I8TELMAkGBSsOAwIaBQAwggGdBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECOqYF+4FSh8CgIIBeLFYxTxgZNl/Wzv9rLsIp3mIxPMiMA4X5S/phuUE8UlVfjnqEPrpM8NKvI3Jrxb44/y0X2E8RPHyKfhJwpCtq5Tgb9XD6Yw0lKQ44yV5eOi3Z+Yw7QBACkuXA7hJGH/PqyRdjb6SmGQ+OtNSXBiopqEQBt8BAgwJLi/1fpj9/M17qiIojgmpKdMN1RF4mGucVDtDeW7Ln5yEkvX3H7DulPztOSLHGK+s7MDDh4NrCE4L9aN4GCfvqxFsTmGmjJHGK8hg9sx99by2fs5TxgeKXnqGJwulvLrGsbCCENi+a/PtjpGdot4mZnkIy/PVR1SYjKUTT4OHsBB7f1qkM6SgUVgk1IuXQ9F8vuo/C8VnXgZR/Il/7Ulgw7SyOdhpbByh3xYq14cy9LIlIFpUMuvQ0lBa6DsMAOzfor7ajXLQ3SpVvMBYVr4o7rGvh4vbGMfi+n2NUAlidqeXjRjVON2hFAxksJVL5AwDFmboRYsxxbvIvX5qU8lJL4igggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xNzA2MjUxOTU1MjlaMCMGCSqGSIb3DQEJBDEWBBSFd/fm2rvYT9lHjMEYjY5HshWSaDANBgkqhkiG9w0BAQEFAASBgD1bkRBkiycNdOodyPy9rmwQGhnovAAkL8uhjfUtcbStp4ZxlR4mY21lF+KLOw5P/2v2WoSuDxKhTwU2TbXXhgG/aFAsA0O1h7tGY0azyANQp5dEVEKjmE4AAdBYlx78218z2+rvnJPVvthRblhXY88UPwZaTALWCEk11+LpXoil-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+</div>
+      
+  </div>
+ </div> 
+ </div>
+
+  <!-- Subscribe section -->
+  <div class="  w3-container pp w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-purple w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4 ptext">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-purple">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4 ptext">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify ptext">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> CreativeControl</p>
+        <p><i class="fa fa-fw fa-phone"></i> (470) 255-7666</p>
+        <p><i class="fa fa-fw fa-envelope"></i> CCclothing@yahoo.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-credit-card"></i> PayPal</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Secure Credit Card</p>
+        <br>
+        <a href="https://twitter.com/CntrlCreativity" class="w3-button w3-large w3-purple" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/creativecontrolclothing/" class="w3-button w3-large w3-purple" href="javascript:void(0)" title="Instagram"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="pp sidebar-menu w3-center w3-padding-24">Copyright &copy; 2017 Create2Control.com - All Rights Reserved.<br>Powered by <a target="_blank" class="w3-hover-opacity">Tech Enterprises</a></div>
+  
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
